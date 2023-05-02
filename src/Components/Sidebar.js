@@ -4,10 +4,14 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
     sidebarAboutBox: {
-        padding: "10px"
+        marginTop: theme.spacing(4),
+        // border: "1px solid red",
+        padding: "20px"
+
     },
     sidebarSection: {
-        marginTop: "10px"
+        marginTop: theme.spacing(4),
+        // border: "1px solid red",
     },
 }))
 

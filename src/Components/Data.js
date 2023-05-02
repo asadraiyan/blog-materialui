@@ -1,6 +1,6 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 export const sections = [
     { title: "Technology", url: "#" },
@@ -19,7 +19,8 @@ export const mainFeaturedPost = {
     title: "Title of a longer featured blog post",
     description:
         "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-    image: "https://cdn.pixabay.com/photo/2015/07/05/10/18/tree-832079_960_720.jpg",
+    image:
+        "https://cdn.pixabay.com/photo/2015/07/05/10/18/tree-832079_960_720.jpg",
     imgText: "main image description",
     linkText: "Continue reading…",
 };
@@ -30,7 +31,7 @@ export const featuredPosts = [
         date: "Nov 12",
         description:
             "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        image: "https://source.unsplash.com/random",
+        image: "https://source.unsplash.com/random/?nature",
         imageText: "Image Text",
     },
     {
@@ -38,7 +39,7 @@ export const featuredPosts = [
         date: "Nov 11",
         description:
             "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        image: "https://source.unsplash.com/random",
+        image: "https://source.unsplash.com/random/?technology",
         imageText: "Image Text",
     },
 ];

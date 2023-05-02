@@ -4,6 +4,7 @@ import { makeStyles } from '@mui/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Sidedrawer from './Sidedrawer';
 
 const useStyles = makeStyles((theme) => ({
     title: {
@@ -23,9 +24,11 @@ const Header = () => {
     return (
         <>
             <Toolbar>
-                <IconButton color='inherit'>
-                    <MenuIcon />
-                </IconButton>
+                <Sidedrawer>
+                    <IconButton color='inherit'>
+                        <MenuIcon />
+                    </IconButton>
+                </Sidedrawer>
                 <Typography variant='h6' className={classes.title}>Blogging Website</Typography>
                 <IconButton color='inherit'>
                     <Badge badgeContent={2} color="secondary">

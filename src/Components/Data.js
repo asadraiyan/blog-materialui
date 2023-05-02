@@ -150,7 +150,7 @@ export const sidebar = {
         { title: "April 1999", url: "#" },
     ],
     social: [
-        { name: "GitHub", icon: GitHubIcon },
+        { name: "GitHub", icon: GitHubIcon, url: "https://github.com/asadraiyan" },
         { name: "Twitter", icon: TwitterIcon },
         { name: "Facebook", icon: FacebookIcon },
     ],

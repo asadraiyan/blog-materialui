@@ -3,15 +3,25 @@ import { Container, Grid } from "@mui/material"
 import Header from './Components/Header';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Featuredpost from './Components/Featuredpost';
-import { featuredPosts } from './Components/Data';
+import { featuredPosts, sidebar } from './Components/Data';
 import PostCard from './Components/PostCard';
+import Sidebar from './Components/Sidebar';
+import Main from './Components/Main';
+import { makeStyles } from '@mui/styles';
 
+
+const useStyles = makeStyles((theme) => ({
+  mainGrid: {
+    marginTop: "20px"
+  },
+}))
 function App() {
   const darkTheme = createTheme({
     palette: {
       mode: 'dark'
     },
   });
+  const classes = useStyles()
   return (
     <ThemeProvider theme={darkTheme}>
       <Container>
@@ -24,6 +34,18 @@ function App() {
               <PostCard post={post} key={post.title} />
             ))
           }
+
+        </Grid>
+        <Grid container spacing={5} className={classes.mainGrid}>
+          <Main title="From the firehose" />
+          <Sidebar
+            title={sidebar.title}
+            description={sidebar.description}
+            archives={sidebar.archives}
+            social={sidebar.social}
+
+
+          />
 
         </Grid>
       </Container>

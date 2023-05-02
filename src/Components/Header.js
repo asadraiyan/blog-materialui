@@ -8,6 +8,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
+        paddingLeft: 10
     },
     tagline: {
         fontSize: 20,

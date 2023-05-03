@@ -12,8 +12,10 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
-    marginTop: "20px"
+    marginTop: "1px",
+
   },
+
 }))
 function App() {
   const darkTheme = createTheme({
